@@ -34,7 +34,7 @@
 
 ## Slide 6 — Demo Architecture and Workflow
 - Docker runs PostgreSQL with pgvector.
-- SQL scripts create the table and load sample embeddings.
+- SQL scripts create the table and load 14 sample documents with embeddings.
 - Similarity search uses L2 distance with the <-> operator.
 - HNSW index improves nearest-neighbor search performance.
 - Python queries the same database and returns top matches.
@@ -47,7 +47,7 @@
 - Good for integrated applications
 
 ### Limitations
-- This demo uses a very small handcrafted dataset
+- This demo uses a small handcrafted dataset with 14 rows
 - Vector dimension is only 4 for simplicity
 - Real systems would use real embeddings and larger data
 
